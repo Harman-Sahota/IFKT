@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './home.module.css';
 import Navbar from '../Components/Navbar';
 import { gsap } from 'gsap';
+import toronto from '../assets/toronto.png';
+import conference from '../assets/conference.png';
+import yarn from '../assets/yarn.png';
 
 const Home = () => {
 
@@ -64,13 +67,18 @@ END:VCALENDAR`;
                         Save the Date in Your Calendar
                     </button>
                 </div>
-                {/* <div className={styles.images}>
-                    <img src='https://i.pinimg.com/564x/b1/97/8a/b1978a028fa4b63d55dd9644e7ecd54e.jpg' alt="Image 1"></img>
-                    <img src='https://i.pinimg.com/564x/b1/97/8a/b1978a028fa4b63d55dd9644e7ecd54e.jpg' alt="Image 2"></img>
-                    <img src='https://i.pinimg.com/564x/b1/97/8a/b1978a028fa4b63d55dd9644e7ecd54e.jpg' alt="Image 3"></img>
-                </div> */}
+          
+              <div className={styles.image1}>
+                    <img src={toronto} alt="CN Tower"></img>
+                </div> 
+                <div className={styles.image2}>
+                    <img src={conference} alt="Conference aerial view"></img>
+                </div>
+                <div className={styles.image3}>
+                    <img src={yarn} alt="yarn"></img>
+                </div> 
+                </div>
             </div>
-        </div>
     );
 };
 

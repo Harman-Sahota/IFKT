@@ -28,7 +28,11 @@
 .maincont {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  padding: 2%;
+
 }
+
 
 #textContainer {
   width: 40%;
@@ -75,19 +79,32 @@
   background-color: #a42626;
 }
 
-.images {
-  float: right;
-  border: 2px solid red;
+.image1,
+.image2,
+.image3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 30vh;
+  width: 30vh;
   overflow: hidden;
+  border: 2px solid #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 2.1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.images img{
-  height: 30%;
-  width: 50%;
+.image1 {
+  margin-top: 15%;
+  margin-right: 1%;
+}
+
+.image2 {
+  margin-top: 34%;
+}
+
+.image3 {
+  margin-top: 15%;  
+  margin-left: 1%; 
 }
 
 @keyframes fadeIn {
@@ -97,5 +114,26 @@
 
   to {
     opacity: 1;
+  }
+}
+
+/* Your existing styles for larger screens */
+
+@media (max-width: 768px) {
+  /* Adjustments for screens with a maximum width of 768px or smaller */
+  .maincont {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    align-items: center; /* Center the content */
+  }
+
+  #textContainer {
+    width: 80%; /* Adjust the width for better readability on smaller screens */
+    margin-top: 10%; /* Adjust the margin for spacing */
+  }
+
+  .image1,
+  .image2,
+  .image3 {
+    display: none; /* Hide the images on smaller screens */
   }
 }
