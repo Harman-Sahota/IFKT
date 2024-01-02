@@ -1,4 +1,101 @@
-.home{
-    font-size: 5vh;
-    color: white;
+#nav {
+  background-color: transparent !important;
+  padding-left: 1%;
+  padding-right: 1%;
+  animation: fadeIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#items {
+  margin-right: 20px;
+  font-weight: 400 !important;
+
+}
+
+#items:hover {
+
+  color: #D63333;
+
+}
+
+.navBrand {
+
+  color: #D63333;
+  font-weight: 500 !important;
+  font-size: 2.5vh;
+  letter-spacing: 1px;
+}
+
+.maincont {
+  display: flex;
+  justify-content: space-between;
+}
+
+#textContainer {
+  width: 40%;
+  padding: 2%;
+  margin-top: 20%;
+}
+
+.sub {
+  font-size: 2.5vh;
+  font-weight: 300 !important;
+  animation: fadeIn 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+
+.sub .subspan {
+
+  color: #D63333;
+
+}
+
+.event {
+  font-weight: 700;
+  font-size: 4vh;
+  letter-spacing: 3px;
+  animation: fadeIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.sub2 {
+  font-size: 2vh;
+  font-weight: 300 !important;
+  animation: fadeIn 2.1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+
+#initbutton {
+  animation: fadeIn 2.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background-color: #D63333;
+  border: none;
+  border-radius: 0 !important;
+  transition: 0.2s ease;
+}
+
+#initbutton:hover {
+  background-color: #a42626;
+}
+
+.images {
+  float: right;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.images img{
+  height: 30%;
+  width: 50%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
