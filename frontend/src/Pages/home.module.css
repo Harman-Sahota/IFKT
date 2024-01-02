@@ -1,3 +1,5 @@
+
+
 #nav {
   background-color: transparent !important;
   padding-left: 1%;
@@ -134,6 +136,34 @@
   .image1,
   .image2,
   .image3 {
-    display: none; /* Hide the images on smaller screens */
+    display: none;
   }
 }
+
+#carouselcont{
+  height: 100vh;
+  margin-top: 3%;
+}
+
+#care{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+  border: 1px solid white;
+}
+
+.descriptionContainer{
+  width: 50%;
+}
+
+.customControlIcon {
+  background-color: darkgrey;
+}
+
+.customIndicatorIcon {
+  background-color: darkgrey;
+}
+
+
