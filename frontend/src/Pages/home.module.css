@@ -1,5 +1,3 @@
-
-
 #nav {
   background-color: transparent !important;
   padding-left: 1%;
@@ -10,12 +8,14 @@
 #items {
   margin-right: 20px;
   font-weight: 400 !important;
+  transition: 1s ease;
 
 }
 
 #items:hover {
 
-  color: #D63333;
+  color: #595F72;
+  
 
 }
 
@@ -105,8 +105,8 @@
 }
 
 .image3 {
-  margin-top: 15%;  
-  margin-left: 1%; 
+  margin-top: 15%;
+  margin-left: 1%;
 }
 
 @keyframes fadeIn {
@@ -122,15 +122,20 @@
 /* Your existing styles for larger screens */
 
 @media (max-width: 768px) {
+
   /* Adjustments for screens with a maximum width of 768px or smaller */
   .maincont {
-    flex-direction: column; /* Change to a column layout for smaller screens */
-    align-items: center; /* Center the content */
+    flex-direction: column;
+    /* Change to a column layout for smaller screens */
+    align-items: center;
+    /* Center the content */
   }
 
   #textContainer {
-    width: 80%; /* Adjust the width for better readability on smaller screens */
-    margin-top: 10%; /* Adjust the margin for spacing */
+    width: 80%;
+    /* Adjust the width for better readability on smaller screens */
+    margin-top: 10%;
+    /* Adjust the margin for spacing */
   }
 
   .image1,
@@ -140,21 +145,22 @@
   }
 }
 
-#carouselcont{
+#carouselcont {
   height: 100vh;
   margin-top: 3%;
 }
 
-#care{
+#care {
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F5F5F5;
+  background-color: #595F72;
+  color: white;
   border: 1px solid white;
 }
 
-.descriptionContainer{
+.descriptionContainer {
   width: 50%;
 }
 
@@ -166,4 +172,64 @@
   background-color: darkgrey;
 }
 
+.introSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 8%;
+  opacity: 0;
+  /* animation: fadeIn 1s ease-in-out forwards; */
+}
 
+.introImageContainer {
+  max-width: 40%;
+  object-fit: cover;
+  /* Adjust the image container width as needed */
+}
+
+.introImageContainer img {
+  width: 100%;
+  height: 300px;
+  border: 1px solid white;
+  /* border-radius: 8px;  */
+  transition: filter 0.5s ease;
+}
+
+.introImageContainer:hover img{
+  filter: grayscale(100%) !important;
+}
+
+.image-container:not(:hover) img {
+  filter: grayscale(0);
+}
+
+.introTextContainer {
+  margin: auto auto;
+  margin-left: 20px;
+  width: 60%;
+  /* Adjust the text container width as needed */
+  padding: 2%;
+  text-align: center;
+  height: 300px;
+  background-color:  #EAEAEA;
+
+}
+
+.introTextContainer h2 {
+  color: #333;
+  /* Set your desired heading color */
+  font-size: 24px;
+  /* Set your desired heading font size */
+  margin-bottom: 10px;
+}
+
+.introTextContainer p {
+  color: #666;
+  margin-top: 2% !important; 
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  /* Set your desired paragraph text color */
+  font-size: 16px;
+  /* Set your desired paragraph font size */
+}

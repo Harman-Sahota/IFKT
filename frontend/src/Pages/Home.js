@@ -11,7 +11,45 @@ import AutoScrollCarousel from '../Components/AutoScrollCarousel';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 const Home = () => {
+
+   
+    const introRef = useRef(null);
+    const carouselRef = useRef(null);
+    
+
+    useEffect(() => {
+        const introElement = introRef.current;
+
+        // Function to handle scroll events
+        const handleScroll = () => {
+            const introRect = introElement.getBoundingClientRect();
+            const scrollPosition = window.scrollY;
+
+            // Calculate the scroll percentage within the intro section
+            const scrollPercentage = (scrollPosition - introRect.top) / introRect.height;
+
+            // Apply the opacity based on the scroll percentage
+            introElement.style.opacity = Math.min(1, Math.max(0, scrollPercentage));
+
+            const carouselElement = carouselRef.current;
+            const carouselRect = carouselElement.getBoundingClientRect();
+            const carouselScrollPosition = window.scrollY;
+            const carouselScrollPercentage = (carouselScrollPosition - carouselRect.top) / carouselRect.height;
+            carouselElement.style.opacity = Math.min(1, Math.max(0, carouselScrollPercentage));
+        };
+
+        // Attach the scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Remove the event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+  
+
 
     const generateICalendarFile = () => {
         // Generate iCalendar content
@@ -83,7 +121,19 @@ const Home = () => {
                         <img src={yarn} alt="yarn"></img>
                     </div>
                 </div>
-                <div className='carousel' id={styles.carouselcont}>
+
+                <div className={styles.introSection} ref={introRef}>
+                    <div className={styles.introImageContainer}>
+                        {/* Replace the placeholder URL with your actual image URL */}
+                        <img className="img-fluid" src="https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Intro Image" />
+                    </div>
+                    <div className={styles.introTextContainer}>
+                        <h2>Evergreen Park Stadium</h2>
+                        <p>Evergreen Park Stadium, an architectural marvel nestled in a verdant landscape, accommodates 50,000 spectators. With cutting-edge design, premium amenities, and eco-friendly initiatives, it hosts electrifying sports events, concerts, and community gatherings. The stadium, a hub for sports and entertainment, seamlessly integrates modernity with environmental sustainability, offering an unparalleled experience for all.</p>
+                    </div>
+                </div>
+
+                <div className='carousel' id={styles.carouselcont} ref={carouselRef}>
                     <AutoScrollCarousel></AutoScrollCarousel>
                 </div>
             </div>

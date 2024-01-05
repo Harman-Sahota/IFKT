@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../Pages/home.module.css';
+import lady1 from '../assets/lady1.png';
+import lady2 from '../assets/lady2.png';
+import man1 from '../assets/man1.png';
 
 const AutoScrollCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -63,21 +66,21 @@ const AutoScrollCarousel = () => {
         onSelect={handleSlide}
       >
         {renderCarouselItem(
-          'https://via.placeholder.com/150',
-          'Sukhdeep Kaur',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+          lady1,
+          'Evelyn Weaver',
+          'A knitting virtuoso with decades of experience, Evelyn is renowned for her intricate lacework and innovative techniques. Join her session to unravel the secrets behind creating timeless, heirloom-quality knits.',
           0
         )}
         {renderCarouselItem(
-          'https://via.placeholder.com/150',
-          'Sukhwinder Singh',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+          man1,
+          'Miles Yarnspinner',
+          'A dynamic yarn enthusiast and entrepreneur, Miles shares his expertise on selecting the perfect yarn for any project. Explore the world of fibers, colors, and textures in his talk, and elevate your knitting projects to new heights.',
           1
         )}
         {renderCarouselItem(
-          'https://via.placeholder.com/150',
-          'Test Person',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+          lady2,
+          'Harper Needlecraft',
+          'Harper, a trailblazer in the knitting community, is set to inspire with her session on sustainable and ethical knitting practices. Discover how to make eco-conscious choices without compromising on creativity and style in this enlightening presentation.',
           2
         )}
       </Carousel>
