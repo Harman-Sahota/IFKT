@@ -15,7 +15,7 @@
 #items:hover {
 
   color: #595F72;
-  
+
 
 }
 
@@ -32,6 +32,9 @@
   justify-content: space-between;
   width: 100%;
   padding: 2%;
+  background-image: url('../assets/background.png');
+  /* Add your background image URL */
+  background-size: cover;
 
 }
 
@@ -39,7 +42,7 @@
 #textContainer {
   width: 40%;
   padding: 2%;
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
 .sub {
@@ -58,6 +61,7 @@
 .event {
   font-weight: 700;
   font-size: 4vh;
+  color: #595F72;
   letter-spacing: 3px;
   animation: fadeIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
@@ -119,6 +123,37 @@
   }
 }
 
+.introTextContainer {
+  margin: auto auto;
+  margin-left: 20px;
+  width: 60%;
+  /* Adjust the text container width as needed */
+  padding: 2%;
+  text-align: center;
+  height: 300px;
+  background-color: #EAEAEA;
+
+}
+
+.introTextContainer h2 {
+  color: #333;
+  /* Set your desired heading color */
+  font-size: 24px;
+  /* Set your desired heading font size */
+  margin-bottom: 10px;
+}
+
+.introTextContainer p {
+  color: #666;
+  margin-top: 2% !important;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  /* Set your desired paragraph text color */
+  font-size: 16px;
+  /* Set your desired paragraph font size */
+}
+
+
 /* Your existing styles for larger screens */
 
 @media (max-width: 768px) {
@@ -138,6 +173,20 @@
     /* Adjust the margin for spacing */
   }
 
+  .introTextContainer h2 {
+
+    font-size: 20px;
+
+  }
+
+  .introTextContainer {
+    padding: 2%;
+  }
+
+  .introTextContainer p {
+    font-size: 12px;
+  }
+
   .image1,
   .image2,
   .image3 {
@@ -147,7 +196,10 @@
 
 #carouselcont {
   height: 100vh;
-  margin-top: 3%;
+  margin-top: 10%;
+  background-image: url('../assets/background.png');
+  /* Add your background image URL */
+  background-size: cover;
 }
 
 #care {
@@ -158,6 +210,14 @@
   background-color: #595F72;
   color: white;
   border: 1px solid white;
+}
+
+
+
+#care img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .descriptionContainer {
@@ -177,8 +237,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-top: 8%;
+  margin-top: 1%;
   opacity: 0;
+  background-image: url('../assets/background.png');
+  /* Add your background image URL */
+  background-size: cover;
   /* animation: fadeIn 1s ease-in-out forwards; */
 }
 
@@ -194,9 +257,11 @@
   border: 1px solid white;
   /* border-radius: 8px;  */
   transition: filter 0.5s ease;
+  object-fit: cover;
+
 }
 
-.introImageContainer:hover img{
+.introImageContainer:hover img {
   filter: grayscale(100%) !important;
 }
 
@@ -204,32 +269,39 @@
   filter: grayscale(0);
 }
 
-.introTextContainer {
-  margin: auto auto;
-  margin-left: 20px;
-  width: 60%;
-  /* Adjust the text container width as needed */
-  padding: 2%;
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-left: 1.5%;
+  opacity: 0;
+  width: 97%;
+}
+
+.galleryItem {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+
+.galleryItem:hover img {
+  filter: grayscale(100%);
+}
+
+.galleryItem:not(:hover) img {
+  filter: grayscale(0);
+}
+
+#sectionheading {
   text-align: center;
-  height: 300px;
-  background-color:  #EAEAEA;
-
-}
-
-.introTextContainer h2 {
-  color: #333;
-  /* Set your desired heading color */
-  font-size: 24px;
-  /* Set your desired heading font size */
-  margin-bottom: 10px;
-}
-
-.introTextContainer p {
-  color: #666;
-  margin-top: 2% !important; 
-  line-height: 1.5em;
-  letter-spacing: 1px;
-  /* Set your desired paragraph text color */
-  font-size: 16px;
-  /* Set your desired paragraph font size */
+  width: 100%;
+  padding: 2%;
+  opacity: 0;
 }

@@ -66,22 +66,34 @@ const AutoScrollCarousel = () => {
         onSelect={handleSlide}
       >
         {renderCarouselItem(
-          lady1,
-          'Evelyn Weaver',
-          'A knitting virtuoso with decades of experience, Evelyn is renowned for her intricate lacework and innovative techniques. Join her session to unravel the secrets behind creating timeless, heirloom-quality knits.',
+          'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=RB5j1QMAAAAJ&citpid=2',
+          'Yordan Kyosev',
+          'Professor Yordan Ksoyev: a distinguished leader in the "Development and Assembly of Textile Products." With a stellar track record in the textile industry, he brings expertise, innovation, and a passion for pushing boundaries. Explore the transformative journey led by his visionary leadership, shaping the future of textile products.',
           0
         )}
         {renderCarouselItem(
-          man1,
-          'Miles Yarnspinner',
-          'A dynamic yarn enthusiast and entrepreneur, Miles shares his expertise on selecting the perfect yarn for any project. Explore the world of fibers, colors, and textures in his talk, and elevate your knitting projects to new heights.',
+          'https://vbu-berater.de/images/comprofiler/537_5c2b498d8acbc.jpg',
+          'Thomas Mutschler',
+          'Technological Advancements in Knitwear at the University of Applied Sciences Niederrhein, led by the accomplished Thomas Mustchler. As the driving force in technology development for knitwear, he combines expertise and innovation. Join the journey guided by his leadership, shaping the future of knitwear technology at IFKT Conference 2024.',
           1
         )}
         {renderCarouselItem(
-          lady2,
-          'Harper Needlecraft',
-          'Harper, a trailblazer in the knitting community, is set to inspire with her session on sustainable and ethical knitting practices. Discover how to make eco-conscious choices without compromising on creativity and style in this enlightening presentation.',
+          'https://www.hs-niederrhein.com/fileadmin/pool-ordner/bilder/Portraitfotos/FB07/Weber.jpg',
+          'Marcos O. Webber',
+          'Textile Technology, with a special emphasis on spinning technology, as well as expertise in management science and pedagogy, defines the focus of TUB/Textile Management under the capable leadership of Marcos O. Webber. Holding a pivotal role in steering the program, Marcos O. Webber brings a wealth of knowledge and a commitment to excellence.',
           2
+        )}
+        {renderCarouselItem(
+          'https://www.autex.org/sites/default/files/team/Image_of_Mirela_Blaga_10b_237_284.jpg',
+          'Mirela Blaga',
+          'Professor Mirela Blaga, Director at Gheorghe Asachi Technical University, is a prominent leader in textile research, serving as an expert evaluator for EU programs and holding key roles in AUTEX and IFKT. Her impactful contributions extend to project management, editorial roles, and international engagements, solidifying her influential presence.',
+          3
+        )}
+         {renderCarouselItem(
+          'https://media.licdn.com/dms/image/C5603AQHR5eNMgqSwZQ/profile-displayphoto-shrink_400_400/0/1619552460157?e=1710374400&v=beta&t=F2ziSGuuV38LXjvVE-hkUp51ftF6k0JJNwOr5GTg-to',
+          'Julia Klausmann',
+          'Julia Klausmann, a Textile and Design Engineer in R&D at Hochschule Niederrhein, excels in sustainable development of technical textiles. Awarded the Promos Scholarship, her impactful contributions span eLearning administration and an Adidas internship.',
+          4
         )}
       </Carousel>
     </div>
