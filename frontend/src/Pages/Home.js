@@ -352,8 +352,8 @@ const Home = () => {
 
                 <h2 id={styles.registerhead} className='hotels'>Accomodations</h2>
                 <div className={styles.maps}>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1443.4743465036545!2d-79.7044882129227!3d43.64923579585067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3f98f4d19eeb%3A0x196631698f30408c!2sMonte%20Carlo%20Inn%20-%20Airport%20Suites!5e0!3m2!1sen!2sca!4v1705333554198!5m2!1sen!2sca" width="590" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1443.4743465036545!2d-79.7044882129227!3d43.64923579585067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ffcde064599%3A0x1a56627493cf763d!2sCountry%20Inn%20%26%20Suites%20by%20Radisson%2C%20Toronto%20Mississauga%2C%20ON!5e0!3m2!1sen!2sca!4v1705333742457!5m2!1sen!2sca" width="590" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5459f0685f%3A0x43f70224dfcf1d36!2sHoliday%20Inn%20Express%20%26%20Suites%20Brampton%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2sca!4v1705368034901!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5487825a79%3A0xed9be7e8c2687a4!2sMonte%20Carlo%20Inn%20-%20Brampton%20Suites!5e0!3m2!1sen!2sca!4v1705368071802!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <Navbar />
