@@ -1,0 +1,36 @@
+/* RegistrationForm.module.css */
+
+.registrationContainer {
+    display: flex;
+    border: 1px solid rgba(169, 169, 169,0.5);
+    padding: 2%;
+    width: 97%;
+  }
+  
+  .imageContainer {
+    flex: 1;
+  }
+  
+  .formContainer {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image {
+    width: 100%; /* Ensure the image takes up the entire width of its container */
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    margin-bottom: 15px;
+  }
+  
+  /* Add any additional styling as needed */
+  

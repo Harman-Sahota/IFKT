@@ -32,10 +32,9 @@
   justify-content: space-between;
   width: 100%;
   padding: 2%;
-  background-image: url('../assets/background.png');
+  background-image: url('../assets/back.png');
   /* Add your background image URL */
   background-size: cover;
-
 }
 
 
@@ -52,16 +51,21 @@
 
 }
 
+.sub{
+  color: white;
+}
+
 .sub .subspan {
 
   color: #D63333;
+  font-weight: bold;
 
 }
 
 .event {
   font-weight: 700;
   font-size: 4vh;
-  color: #595F72;
+  color: wheat;
   letter-spacing: 3px;
   animation: fadeIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
@@ -70,6 +74,8 @@
   font-size: 2vh;
   font-weight: 300 !important;
   animation: fadeIn 2.1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  color: whitesmoke;
+  font-weight: bold;
 
 }
 
@@ -153,53 +159,9 @@
   /* Set your desired paragraph font size */
 }
 
-
-/* Your existing styles for larger screens */
-
-@media (max-width: 768px) {
-
-  /* Adjustments for screens with a maximum width of 768px or smaller */
-  .maincont {
-    flex-direction: column;
-    /* Change to a column layout for smaller screens */
-    align-items: center;
-    /* Center the content */
-  }
-
-  #textContainer {
-    width: 80%;
-    /* Adjust the width for better readability on smaller screens */
-    margin-top: 10%;
-    /* Adjust the margin for spacing */
-  }
-
-  .introTextContainer h2 {
-
-    font-size: 20px;
-
-  }
-
-  .introTextContainer {
-    padding: 2%;
-  }
-
-  .introTextContainer p {
-    font-size: 12px;
-  }
-
-  .image1,
-  .image2,
-  .image3 {
-    display: none;
-  }
-}
-
 #carouselcont {
   height: 100vh;
-  margin-top: 10%;
-  background-image: url('../assets/background.png');
-  /* Add your background image URL */
-  background-size: cover;
+  margin-top: 5%;
 }
 
 #care {
@@ -239,9 +201,7 @@
   padding: 20px;
   margin-top: 1%;
   opacity: 0;
-  background-image: url('../assets/background.png');
-  /* Add your background image URL */
-  background-size: cover;
+ 
   /* animation: fadeIn 1s ease-in-out forwards; */
 }
 
@@ -305,3 +265,143 @@
   padding: 2%;
   opacity: 0;
 }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in the grid */
+  gap: 20px; /* Adjust the gap between items */
+  padding: 3%;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd; /* Add border for better visibility */
+  padding: 20px; /* Add padding for spacing */
+  width: 400px; /* Adjust the width as needed */
+  height: auto;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.gridItem img {
+  width: 80%;
+  max-width: 80%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.gridText {
+  margin-top: 10px; /* Adjust margin between image and text */
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+#countrysection{
+  margin-top: 3%;
+}
+
+#registerhead{
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+.maps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.maps iframe{
+  margin-left: 1%; 
+  border: 1px red !important;
+  padding: 2%;
+
+}
+
+#datehead{
+  padding: 3%;
+  text-align: center;
+}
+
+#impdate {
+  text-align: center;
+  padding: 2%;
+  margin-top: 4%;
+}
+
+#impdate ul {
+  list-style: none;
+  padding: 0;
+}
+
+#impdate li {
+  text-align: center; /* Align text to the left */
+  margin-bottom: 10px; /* Adjust the margin between list items */
+}
+
+.countriesmap{
+  width: 100%;
+  top: 1%;
+  padding: 1%;
+  border: 1px solid darkgray;
+}
+
+#det{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+/* Your existing styles for larger screens */
+
+@media (max-width: 768px) {
+
+  .maps{
+    flex-direction: column;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr; /* Switch to a single column for small screens */
+  }
+
+  /* Adjustments for screens with a maximum width of 768px or smaller */
+  .maincont {
+    flex-direction: column;
+    /* Change to a column layout for smaller screens */
+    align-items: center;
+    /* Center the content */
+  }
+
+  #textContainer {
+    width: 80%;
+    /* Adjust the width for better readability on smaller screens */
+    margin-top: 10%;
+    /* Adjust the margin for spacing */
+  }
+
+  .introTextContainer h2 {
+
+    font-size: 20px;
+
+  }
+
+  .introTextContainer {
+    padding: 2%;
+  }
+
+  .introTextContainer p {
+    font-size: 12px;
+  }
+
+  .image1,
+  .image2,
+  .image3 {
+    display: none;
+  }
+}
+
+

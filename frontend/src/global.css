@@ -24,4 +24,9 @@ body {
     line-height: 30px;
 }
 
-  
+
+#sectionheading {
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+  }

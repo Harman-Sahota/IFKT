@@ -1,0 +1,46 @@
+/* CountryList.css */
+
+.country-list {
+    width: 100%;
+    background-color: white;
+  }
+  
+  .region-heading {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 2% !important;
+    color: #595F72;
+    border: 0.5px solid darkgrey;
+  }
+  
+  .country-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5px;
+    padding: 4%;
+  }
+  
+  .country-card {
+    text-align: center;
+    padding: 6%;
+    margin-left: 7%;
+    width: 200px;  
+    height: 60px; 
+  }
+  
+  .country-card img {
+    width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .country-name {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400 !important;
+  }
+  

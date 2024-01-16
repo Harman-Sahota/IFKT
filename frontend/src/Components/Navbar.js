@@ -42,10 +42,11 @@ const SiteNavbar = () => {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className={`ms-auto ${styles.navItems}`} justify-content-end>
     <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('introstart')}>Venue</Nav.Link>
-      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('carousel')}>Speakers</Nav.Link>
-      <Nav.Link id={styles.items} className="mr-3" href="#about">Agenda</Nav.Link>
-      <Nav.Link id={styles.items} className="mr-3" href="#services">Venue</Nav.Link>
-      <Nav.Link id={styles.items} className="mr-3" href="#contact">Contact</Nav.Link>
+    <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('carousel')}>Speakers</Nav.Link>
+    <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('messages')}>Messages`</Nav.Link>
+      {/* <Nav.Link id={styles.items} className="mr-3" href="#about">Agenda</Nav.Link> */}
+      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('country-list')}>Countries</Nav.Link>
+      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('register')}>Register</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
