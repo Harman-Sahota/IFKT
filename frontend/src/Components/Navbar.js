@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import styles from '../Pages/home.module.css';
+import Gallery from './Gallery';
 
 const SiteNavbar = () => {
   const scrollToSection = (className) => {
@@ -46,7 +47,10 @@ const SiteNavbar = () => {
     <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('messages')}>Messages`</Nav.Link>
       {/* <Nav.Link id={styles.items} className="mr-3" href="#about">Agenda</Nav.Link> */}
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('country-list')}>Countries</Nav.Link>
+      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('register')}>Scientific Committee</Nav.Link>
+      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('gall')}>Past Events</Nav.Link>
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('register')}>Register</Nav.Link>
+     
     </Nav>
   </Navbar.Collapse>
 </Navbar>

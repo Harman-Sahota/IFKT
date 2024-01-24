@@ -15,6 +15,7 @@ import RegistrationForm from '../Components/Registrationform';
 import FoldedSection from '../Components/Folded';
 import cal from '../assets/IFKT.ics'
 import map from '../assets/map.png'
+import Gallery from '../Components/Gallery';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -220,6 +221,7 @@ const Home = () => {
                 </div>
 
                 <h2 id={styles.sectionheading} className='introstart' ref={venueRef}>The Venue</h2>
+                <iframe id={styles.venuemap} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.2675048877904!2d-79.80269282360833!3d43.725769471098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b169a10b02cb5%3A0x1a6c4dd3b0be855!2sCyril%20Clark%20Library%20Lecture%20Hall!5e0!3m2!1sen!2sca!4v1706119658793!5m2!1sen!2sca" width="1250" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div className={styles.introSection} ref={introRef}>
                     <div className={styles.introImageContainer}>
                         {/* Replace the placeholder URL with your actual image URL */}
@@ -265,28 +267,92 @@ const Home = () => {
 
                     {/* First Row */}
                     <div className={styles.gridItem}>
-                        <img className="img-fluid" src="https://www.chatelaine.com/wp-content/uploads/2018/01/patrick-brown-resignation.jpg" alt="Image 1" />
+                        <img className="img-fluid" src="https://ehq-production-canada.imgix.net/9dd1b10ae0b2258fb14de2cb6782839fc273e87b/original/1684950356/4dde7ad138ebc67538d951fc93498422_Councillor_Harkirat_Singh_Headshot_2022-cropped.jpg?auto=compress" alt="Image 1" />
                         <div className={styles.gridText}>
-                            <h3>The Mayor of Brampton</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula auctor mi, non rhoncus metus viverra quis. Sed auctor elit vel augue bibendum, a dapibus libero volutpat. Duis ac ex nec quam commodo commodo in nec massa. Proin euismod tellus nec risus imperdiet, id euismod velit efficitur. Integer ut augue et tortor tincidunt elementum non id libero. Fusce eget massa vel augue dapibus facilisis. Nam ut sem nec tellus tincidunt fringilla in sit amet metus. Mauris eu justo vel sem iaculis eleifend. Ut vel neque vitae nisi laoreet vulputate.</p>
+                            <h3>Deputy Mayor - Harkirat Singh</h3>
+                            <p>
+                                On behalf of the City of Brampton, it is with great pleasure and enthusiasm that I extend a
+                                warm welcome to the esteemed members of the International Federation of Knitting
+                                Technologists as you convene in North America for the first time.  <br></br><br></br>
+                                Your decision to bring this distinguished gathering to our city is a testament to the global
+                                significance of knitting technology and its impact on various industries. We are honoured to
+                                host a community that is at the forefront of innovation and excellence in this field.  <br></br><br></br>
+                                As you commence your conference, we trust that the sharing of ideas and the establishment of
+                                meaningful connections will be at the forefront. Our city has a rich tradition of embracing
+                                diverse perspectives and fostering collaboration, and we believe that your presence here will
+                                contribute to the continued growth and evolution of knitting technology.  <br></br><br></br>
+                                The City of Brampton extends its best wishes for a successful and fruitful conference. May this
+                                gathering be a catalyst for discoveries, meaningful partnerships, and advancements in the field
+                                of knitting technology.  <br></br><br></br>
+                                I would like to express my heartfelt gratitude to Hitesh Sharma, the esteemed President of the
+                                Congress, for consistently embodying the qualities of a true champion and leader. His unwavering
+                                commitment has not only inspired but also paved the way for aspiring young entrepreneurs.<br></br><br></br>
+                                <br></br><br></br>
+                                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
+                            </p>
                         </div>
                     </div>
 
                     {/* Second Row */}
                     <div className={styles.gridItem}>
-                        <img className="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/5/54/Bonnie_Crombie_at_2017_AMO_Conference_%2836541302906%29_%28cropped3%29.jpg" alt="Image 2" />
+                        <img className="img-fluid" src="https://www.hs-niederrhein.de/fileadmin/pool-ordner/bilder/Portraitfotos/FB07/Weber.jpg" alt="Image 2" />
                         <div className={styles.gridText}>
-                            <h3>The Mississauga Mayor</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula auctor mi, non rhoncus metus viverra quis. Sed auctor elit vel augue bibendum, a dapibus libero volutpat. Duis ac ex nec quam commodo commodo in nec massa. Proin euismod tellus nec risus imperdiet, id euismod velit efficitur. Integer ut augue et tortor tincidunt elementum non id libero. Fusce eget massa vel augue dapibus facilisis. Nam ut sem nec tellus tincidunt fringilla in sit amet metus. Mauris eu justo vel sem iaculis eleifend. Ut vel neque vitae nisi laoreet vulputate.</p>
+                            <h3>Marcus O. Weber - General Secretary IFKT</h3>
+                            <p>
+                                We are proud to cooperate internationally for more than 65 years since our first meeting in Austria in 1956. IFKT
+                                (International Federation of Knitting Technologists) is an amicable non-profit association of professionals from the
+                                knitting and neighbouring industries of various nations with the common goal of promoting interest in knitting and
+                                other textile industries. A lively professional exchange between industries, research and education takes place in joint
+                                congresses and technical discussions. <br></br><br></br>
+                                The 51st IFKT Congress will take place for the first time on the American continent, opening up many new
+                                perspectives. Congress President Hitesh Sharma&#39;s organisation and implementation is part of a long-standing tradition. I
+                                wish all participants of the congress in presence and online much success in friendly networking and professional
+                                exchange. <br></br><br></br>
+
+
+                                Liebe Wirkerei, Strickerei Fachleute und globale Strickwarenhersteller <br></br><br></br>
+
+                                Wir sind stolz auf internationaler Ebene seit über 65 Jahren zu kooperieren seit unserem ersten Meeting in Österreich
+                                1956. IFKT (International Federation of Knitting Technologists) ist ein freundschaftlicher Zusammenschluss von
+                                Fachleuten aus der Maschenindustrie und fachangrenzender Industrien verschiedener Nationen mit dem gemeinsamen
+                                Ziel, das Interesse an der Maschentechnologie und anderen Textilbranchen zu fördern. In gemeinsamen Kongressen und
+                                Fachgesprächen findet ein reger fachlicher Austausch zwischen Industrien, Forschung und Bildung statt.
+                                Der 51. IFKT Kongress findet das erste Mal im amerikanischen Kontinent statt und eröffnet damit viele neue
+                                Perspektiven. Der Tagungspräsident Hitesh Sharma reiht sich mit seiner Organisation und Durchführung in eine
+                                langjährige Tradition ein. Ich wünsche allen Teilnehmern der Tagung in Präsenz und Online viel Erfolg beim
+                                freundschaftlichen Networking und Fachaustausch.
+                            </p>
                         </div>
                     </div>
 
                     {/* Third Row */}
                     <div className={styles.gridItem}>
-                        <img className="img-fluid" src="" alt="Image 3" />
+                        <img className="img-fluid" src="https://www.knittingindustry.com/uploads/5694/new%20president.jpg" alt="Image 3" />
                         <div className={styles.gridText}>
-                            <h3>Sample Person</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula auctor mi, non rhoncus metus viverra quis. Sed auctor elit vel augue bibendum, a dapibus libero volutpat. Duis ac ex nec quam commodo commodo in nec massa. Proin euismod tellus nec risus imperdiet, id euismod velit efficitur. Integer ut augue et tortor tincidunt elementum non id libero. Fusce eget massa vel augue dapibus facilisis. Nam ut sem nec tellus tincidunt fringilla in sit amet metus. Mauris eu justo vel sem iaculis eleifend. Ut vel neque vitae nisi laoreet vulputate.</p>
+                            <h3>Hitesh Kumar Sharma - President of IFKT NA</h3>
+                            <p>
+                                On behalf of IFKT-International Federation of Knitting Technologists-Germany, I am delighted to extend a warm
+                                welcome to each and every one of you in 51 th international congress- Future of Knitting It is with great pleasure that we
+                                gather here today to exchange knowledge, ideas, and experiences in this prestigious conference. This conference serves
+                                as a platform for knitting experts, professionals, and enthusiasts from textile/knitting fields to come together and engage
+                                in meaningful discussions, explore innovative solutions, and foster collaborations that will shape the future of our
+                                industries in North America. <br></br><br></br>
+                                Over the course of the conference, we have curated a diverse range of sessions, presentations, and keynote speeches that
+                                cover a wide array of topics. Our esteemed speakers from global textiles universities and panelists bring with them a
+                                wealth of expertise and insights, ensuring that you will gain valuable knowledge and perspectives throughout the event.
+                                Furthermore, we encourage you to take full advantage of the networking textiles opportunities available in North
+                                America Continent. This conference provides an ideal space for you to connect with like-minded individuals, textile &amp;
+                                apparel manufacturers to expand your professional network, market job opportunities and potentially forge partnerships
+                                that will propel your endeavors forward in textile field especially in knit wears. <br></br><br></br>
+                                We would like to express our gratitude especially Deputy Mayor of Brampton-Harkirat Singh &amp;Regional Councillor
+                                Gurpartap Singh Toor also to all our sponsors, industry partners, and volunteers. Without their support, this
+                                conference would not have been possible. <br></br><br></br>
+                                Once again, I extend my warmest welcome to all the participants. May this conference be a source of inspiration,
+                                learning, new job opportunities, growth for each and every one of you. <br></br><br></br>
+                                Thank you and enjoy the conference!
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -346,14 +412,18 @@ const Home = () => {
                         }
                     />
                 </div>
+                <div className='gall' id={styles.gall}>
+                    <Gallery></Gallery>
+                </div>
+
                 <h2 id={styles.registerhead}> Register Today to Attend!</h2>
 
                 <RegistrationForm></RegistrationForm>
 
                 <h2 id={styles.registerhead} className='hotels'>Accomodations</h2>
                 <div className={styles.maps}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5459f0685f%3A0x43f70224dfcf1d36!2sHoliday%20Inn%20Express%20%26%20Suites%20Brampton%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2sca!4v1705368034901!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5487825a79%3A0xed9be7e8c2687a4!2sMonte%20Carlo%20Inn%20-%20Brampton%20Suites!5e0!3m2!1sen!2sca!4v1705368071802!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5459f0685f%3A0x43f70224dfcf1d36!2sHoliday%20Inn%20Express%20%26%20Suites%20Brampton%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2sca!4v1705368034901!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5487825a79%3A0xed9be7e8c2687a4!2sMonte%20Carlo%20Inn%20-%20Brampton%20Suites!5e0!3m2!1sen!2sca!4v1705368071802!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <Navbar />

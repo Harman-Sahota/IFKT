@@ -21,8 +21,8 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Use Email.js to send registration confirmation email
+  
+    // Send email to the recipient
     emailjs
       .send(
         'YOUR_SERVICE_ID',
@@ -30,21 +30,51 @@ const RegistrationForm = () => {
         {
           to_name: formData.firstName,
           from_name: 'Your App',
-          message_html: 'Registration successful!',
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          phone_number: formData.phoneNumber,
+          email: formData.email
         },
         'YOUR_USER_ID'
       )
       .then(
         (response) => {
-          console.log('Email sent successfully:', response);
+          console.log('Recipient Email sent successfully:', response);
           // You can add further actions here, such as showing a success message to the user
         },
         (error) => {
-          console.error('Email sending failed:', error);
+          console.error('Recipient Email sending failed:', error);
           // You can handle errors, e.g., show an error message to the user
         }
       );
+  
+    // Send email to yourself (admin)
+    emailjs
+      .send(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        {
+          to_name: 'IFKT Team', // Specify the admin's name or use a dedicated email address
+          from_name: 'IFKT Notification',
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          phone_number: formData.phoneNumber,
+          email: formData.email
+        },
+        'YOUR_USER_ID'
+      )
+      .then(
+        (response) => {
+          console.log('Admin Email sent successfully:', response);
+          // You can add further actions here, such as logging or notification
+        },
+        (error) => {
+          console.error('Admin Email sending failed:', error);
+          // You can handle errors, e.g., log the error or send an alert
+        }
+      );
   };
+  
 
   return (
     <Container className={styles.registrationContainer}>

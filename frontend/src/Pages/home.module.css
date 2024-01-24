@@ -159,6 +159,14 @@
   /* Set your desired paragraph font size */
 }
 
+#gall{
+  padding: 8%;
+}
+
+#venuemap{
+  margin-left: 2%;
+}
+
 #carouselcont {
   height: 100vh;
   margin-top: 5%;
@@ -288,12 +296,11 @@
 .gridItem img {
   width: 80%;
   max-width: 80%;
-  height: 40%;
+  height: 20%;
   object-fit: cover;
 }
 
 .gridText {
-  margin-top: 10px; /* Adjust margin between image and text */
   letter-spacing: 1px;
   line-height: 1.5em;
 }
@@ -359,6 +366,10 @@
 /* Your existing styles for larger screens */
 
 @media (max-width: 768px) {
+
+  #venuemap{
+    width: 500px !important;
+  }
 
   .maps{
     flex-direction: column;
