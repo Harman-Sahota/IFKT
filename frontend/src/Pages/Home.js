@@ -263,7 +263,7 @@ const Home = () => {
                <MessagesSection />
 
 
-                <h2 id={styles.sectionh}  > Gurpartap Singh Toor and Harkirat Singh</h2>
+                <h4 id={styles.sectionh}  > Gurpartap Singh Toor and Harkirat Singh</h4>
                 <iframe
                     width="560"
                     height="315"
