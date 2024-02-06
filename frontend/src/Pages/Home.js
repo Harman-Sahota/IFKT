@@ -15,7 +15,7 @@ import RegistrationForm from '../Components/Registrationform';
 import FoldedSection from '../Components/Folded';
 import cal from '../assets/IFKT.ics'
 import map from '../assets/map.png'
-import message from '../assets/message.mov'
+import message from '../assets/message.mp4'
 import Gallery from '../Components/Gallery';
 import MessagesSection from '../Components/Messages';
 
