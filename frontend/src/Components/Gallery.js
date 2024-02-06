@@ -28,11 +28,13 @@ import Poland25 from '../assets/poland25.jpg';
 import Poland26 from '../assets/poland26.jpg';
 import Poland27 from '../assets/poland27.jpg';
 import Poland28 from '../assets/poland28.jpg';
+import Poland29 from '../assets/poland29.jpg';
+import Poland30 from '../assets/poland30.jpg';
 import styles from './Gallery.module.css'; // Create a CSS module file
 
 const Gallery = () => {
-  const galleryTitle = "IFKT Poland";
-  const gallerySubtitle = "2 - 4 OCTOBER 2018";
+  const galleryTitle = "Glimpse of previous IFKT Congress held in Ireland and Poland";
+  const gallerySubtitle = "";
 
   const imageUrls = [
     Poland1,
@@ -63,6 +65,8 @@ const Gallery = () => {
     Poland26,
     Poland27,
     Poland28,
+    Poland29,
+    Poland30
   ];
 
   const handleImageClick = () => {

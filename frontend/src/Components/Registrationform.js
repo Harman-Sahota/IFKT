@@ -25,17 +25,17 @@ const RegistrationForm = () => {
     // Send email to the recipient
     emailjs
       .send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_h8ibkqa',
+        'template_f225ypw',
         {
           to_name: formData.firstName,
-          from_name: 'Your App',
+          from_name: 'IFKT',
           first_name: formData.firstName,
           last_name: formData.lastName,
           phone_number: formData.phoneNumber,
           email: formData.email
         },
-        'YOUR_USER_ID'
+        'ITEDlNDS4SLpA-iwW'
       )
       .then(
         (response) => {
@@ -51,8 +51,8 @@ const RegistrationForm = () => {
     // Send email to yourself (admin)
     emailjs
       .send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_h8ibkqa',
+        'template_1ymc2hn',
         {
           to_name: 'IFKT Team', // Specify the admin's name or use a dedicated email address
           from_name: 'IFKT Notification',
@@ -61,7 +61,7 @@ const RegistrationForm = () => {
           phone_number: formData.phoneNumber,
           email: formData.email
         },
-        'YOUR_USER_ID'
+        'ITEDlNDS4SLpA-iwW'
       )
       .then(
         (response) => {

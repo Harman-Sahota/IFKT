@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import styles from '../Pages/home.module.css';
 import Gallery from './Gallery';
 
@@ -43,13 +43,14 @@ const SiteNavbar = () => {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className={`ms-auto ${styles.navItems}`} justify-content-end>
     <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('introstart')}>Venue</Nav.Link>
-    <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('carousel')}>Speakers</Nav.Link>
     <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('messages')}>Messages`</Nav.Link>
+    <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('carousel')}>Speakers</Nav.Link>
+   
       {/* <Nav.Link id={styles.items} className="mr-3" href="#about">Agenda</Nav.Link> */}
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('country-list')}>Countries</Nav.Link>
-      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('register')}>Scientific Committee</Nav.Link>
+      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('science')}>Scientific Committee</Nav.Link>
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('gall')}>Past Events</Nav.Link>
-      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('register')}>Register</Nav.Link>
+      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('registernow')}>Register</Nav.Link>
      
     </Nav>
   </Navbar.Collapse>

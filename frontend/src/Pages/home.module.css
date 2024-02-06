@@ -37,6 +37,26 @@
   background-size: cover;
 }
 
+#science{
+  margin-top: 3%;
+  text-align: center;
+}
+
+#science2{
+  margin-top: 3%;
+  text-align: center;
+}
+
+#science2 ul {
+  text-align: left; /* Reset text-align for the list items */
+  display: inline-block; /* Make the list display as an inline-block */
+  line-height: 2em;
+}
+
+#sectionh{
+  text-align: center;
+  padding: 3%;
+}
 
 #textContainer {
   width: 40%;
@@ -313,6 +333,20 @@
   padding: 2%;
   width: 100%;
   text-align: center;
+
+}
+
+.tickets{
+  padding: 2%;
+  text-align: center;
+}
+Button:hover{
+  cursor: pointer !important;
+
+}
+
+#registerhead a{
+cursor: pointer;
 }
 
 .maps{
@@ -324,7 +358,6 @@
 
 .maps iframe{
   margin-left: 1%; 
-  border: 1px red !important;
   padding: 2%;
 
 }
@@ -363,9 +396,55 @@
   line-height: 1.5em;
 }
 
+.videoembed{
+  display: block; /* Ensures the iframe behaves like a block element */
+  margin: 0 auto; 
+}
+
+
+.messagesContainer {
+  margin-top: 20px; /* Adjust top margin to prevent covering too much of the website */
+  display: flex;
+  justify-content: center; /* Center PDFs horizontally */
+}
+
+.messagesGrid {
+  display: flex;
+  flex-wrap: wrap; /* Allow PDFs to wrap to the next line */
+  justify-content: center; /* Center PDFs horizontally */
+  max-width: 1000px; /* Set maximum width for the grid */
+}
+
+.pdfContainer {
+  width: 600px; /* Increase PDF container width */
+  height: 400px; /* Maintain PDF container height */
+  margin: 10px; /* Adjust margin between PDFs */
+  overflow-x: auto; /* Enable horizontal scrolling for PDF container */
+  border: 1px solid #ccc; /* Add border for visual separation */
+}
+
+.pdfPage {
+  width: 100%; /* Ensure page takes full width of container */
+  height: calc(100% - 20px); /* Adjust page height to fit container minus margin */
+}
+
+
+
 /* Your existing styles for larger screens */
 
 @media (max-width: 768px) {
+
+  .pdfContainer{
+    width: 85%;
+    object-fit: cover;
+  }
+  iframe{
+    width: 95%;
+  }
+
+  body{
+    padding: 2%;
+  }
 
   #venuemap{
     width: 500px !important;
