@@ -328,7 +328,7 @@ const Home = () => {
                             <ul>
                                 <li><b>10th June, 2024:</b> Abstract submission</li>
                                 <li><b>01st July:</b> Author notifications</li>
-                                <li><b>03rd July:</b> Early bird registration deadline</li>
+                                <li><b>03rd July:</b> Registration deadline</li>
                                 <li><b>01st August:</b> Camera Ready Full Version of the Manuscript</li>
                                 <li><b>10th August:</b> Final Version of all accepted contributions for publication post congress</li>
                                 <li>Submit your full paper template by <b>01st August 2024</b>.</li>

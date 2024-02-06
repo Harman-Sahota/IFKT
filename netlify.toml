@@ -1,4 +1,4 @@
 [build]
 base = "frontend"
-publish = "frontend/build"  # Updated path to the build directory
+publish = "build"  # Updated path to the build directory
 command = "npm run build"
