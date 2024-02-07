@@ -8,7 +8,7 @@ import toronto from '../assets/toronto.png';
 import conference from '../assets/conference.png';
 import yarn from '../assets/yarn.png';
 import AutoScrollCarousel from '../Components/AutoScrollCarousel';
-import { Modal,Button } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
 // import ThreeColumnLayout from '../Components/ThreeColumn';
 import CountryList from '../Components/BentoCountries';
 import RegistrationForm from '../Components/Registrationform';
@@ -188,7 +188,7 @@ const Home = () => {
                         Congress will be hosted by the Cyril Clark Theatre in
                         Brampton, Ontario Canada on August 21st and 22nd, 2024. The
                         theme of the upcoming IFKT Congress is <b>“Future of
-                        Knitting.”</b> The last IFKT Congress was held at Ulster University
+                            Knitting.”</b> The last IFKT Congress was held at Ulster University
                         in Dublin, Ireland in 2022. Due to Covid, the normal scheduling
                         of the conference was interrupted, but this settles it back into
                         its normal schedule in the beautiful country of Canada. Please
@@ -205,7 +205,7 @@ const Home = () => {
                         A chance to learn the latest news, technologies, and to
                         network with other like minded people who are engaged in this
                         unique and close-knit industry.<br></br><br></br>
-                        Anyone interested is welcome to this event. Please 
+                        Anyone interested is welcome to this event. Please
                         spread the word about this opportunity to learn, grow, share,
                         and network with others in the industry. A more detailed
                         agenda of the IFKT Congress will soon be available. As 3D
@@ -214,8 +214,8 @@ const Home = () => {
                         go from here? What new areas will it move into? What pivotal
                         technologies have changed the trajectory of the industry? All
                         voices matter, and we look forward to seeing a diverse group
-                        of people attending the IFKT Congress this year. 
-                         Visit our website occasionally, as we
+                        of people attending the IFKT Congress this year.
+                        Visit our website occasionally, as we
                         will update as more information is available concerning the
 
                         51st IFKT Congress at the Cyril Clark Theatre in Brampton,
@@ -259,8 +259,8 @@ const Home = () => {
 
 
                 <h2 id={styles.sectionheading} className='messages' ref={messagesHeading}>Messages</h2>
-               
-               <MessagesSection />
+
+                <MessagesSection />
 
 
                 <h4 id={styles.sectionh}  > Gurpartap Singh Toor and Harkirat Singh</h4>
@@ -280,36 +280,28 @@ const Home = () => {
                     <AutoScrollCarousel></AutoScrollCarousel>
                 </div>
 
-
-                {/* Three Column Section */}
-              
-
-
-
-
-
                 <CountryList></CountryList>
 
                 <h2 id={styles.science} className='science' >Scientific Committee</h2>
 
                 <div id={styles.science2}>
-                <ul>
-                    <li>Subhash Anand - University of Bolton, United Kingdom</li>
-                    <li>Mirela Blaga - Gheorghe Asachi Technical University of lasi, Romania</li>
-                    <li>Chokri Cherif - Technische Universität Dresden, Germany</li>
-                    <li>Andrea Ehrmann - Fachhochschule Bielefeld, Germany</li>
-                    <li>Thomas Gries - Rheinisch-Westf. Techn. Hochschule Aachen, Germany</li>
-                    <li>Jörg Hartmann - H. Stoll GmbH & Co. KG, Germany</li>
-                    <li>Lubos Hes - Technical University of Liberec, Czech Republic</li>
-                    <li>Heike Illing-Günther - Sächsisches Textilforschungsinstitut e. V., Germany</li>
-                    <li>Krzysztof Kowalski - Politechnika Lodzka, Poland</li>
-                    <li>Liu Liyan - School of Textiles, Tianjin Polytechnic University, China</li>
-                    <li>Arzu Marmarali - Ege University, Turkey</li>
-                    <li>Elzbieta Mielicka - Instytut Wiókiennictwa, Textile Research Institute, Poland</li>
-                    <li>Shin Woong Park - INHA University, Korea</li>
-                    <li>Alenka Pavko-Cuden - University of Ljubljana, Slovenia</li>
-                    <li>Maike Rabe - Hochschule Niederrhein, Germany</li>
-                </ul>
+                    <ul>
+                        <li>Subhash Anand - University of Bolton, United Kingdom</li>
+                        <li>Mirela Blaga - Gheorghe Asachi Technical University of lasi, Romania</li>
+                        <li>Chokri Cherif - Technische Universität Dresden, Germany</li>
+                        <li>Andrea Ehrmann - Fachhochschule Bielefeld, Germany</li>
+                        <li>Thomas Gries - Rheinisch-Westf. Techn. Hochschule Aachen, Germany</li>
+                        <li>Jörg Hartmann - H. Stoll GmbH & Co. KG, Germany</li>
+                        <li>Lubos Hes - Technical University of Liberec, Czech Republic</li>
+                        <li>Heike Illing-Günther - Sächsisches Textilforschungsinstitut e. V., Germany</li>
+                        <li>Krzysztof Kowalski - Politechnika Lodzka, Poland</li>
+                        <li>Liu Liyan - School of Textiles, Tianjin Polytechnic University, China</li>
+                        <li>Arzu Marmarali - Ege University, Turkey</li>
+                        <li>Elzbieta Mielicka - Instytut Wiókiennictwa, Textile Research Institute, Poland</li>
+                        <li>Shin Woong Park - INHA University, Korea</li>
+                        <li>Alenka Pavko-Cuden - University of Ljubljana, Slovenia</li>
+                        <li>Maike Rabe - Hochschule Niederrhein, Germany</li>
+                    </ul>
                 </div>
 
 
@@ -370,8 +362,8 @@ const Home = () => {
                 </div>
 
                 <div className={styles.tickets}>
-                <h4 id={styles.registerhead} className='registernow'>Secure Your General Admission Tickets Now! Tap to Get Yours!</h4>
-                <a className={styles.ticketbtn} href='https://tickets.brampton.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=582F3A90-E36D-4820-A0FB-E7159F6ED186&BOparam::WScontent::loadArticle::context_id=9CF6357F-7692-4810-BC2F-91B601C6F8D2' target="_blank"><Button>Book Tickets</Button></a>
+                    <h4 id={styles.registerhead} className='registernow'>Secure Your General Admission Tickets Now! Tap to Get Yours!</h4>
+                    <a className={styles.ticketbtn} href='https://tickets.brampton.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=582F3A90-E36D-4820-A0FB-E7159F6ED186&BOparam::WScontent::loadArticle::context_id=9CF6357F-7692-4810-BC2F-91B601C6F8D2' target="_blank"><Button>Book Tickets</Button></a>
                 </div>
 
                 <h4 id={styles.registerhead}> Already got your tickets? Elevate your event experience by securing your spot for our exclusive presentation!</h4>
@@ -383,6 +375,8 @@ const Home = () => {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5459f0685f%3A0x43f70224dfcf1d36!2sHoliday%20Inn%20Express%20%26%20Suites%20Brampton%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2sca!4v1705368034901!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.5104492603996!2d-79.69492012360756!3d43.74149577109805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3c5487825a79%3A0xed9be7e8c2687a4!2sMonte%20Carlo%20Inn%20-%20Brampton%20Suites!5e0!3m2!1sen!2sca!4v1705368071802!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+
+                <p className={styles.copyright}><b>Disclaimer:</b> All rights reserved by event organizer. The participation registration fee is non-refundable. All participants and attendees must follow Brampton city by-laws and regulations.</p>
 
                 <Navbar />
 
@@ -399,12 +393,6 @@ const Home = () => {
                         />
                     </Modal.Body>
                 </Modal>
-
-
-
-
-
-
             </div>
         </div>
     );

@@ -55,7 +55,7 @@
 
 #sectionh{
   text-align: center;
-  padding: 3%;
+  padding: 1%;
 }
 
 #textContainer {
@@ -401,32 +401,31 @@ cursor: pointer;
   margin: 0 auto; 
 }
 
-
-.messagesContainer {
-  margin-top: 20px; /* Adjust top margin to prevent covering too much of the website */
-  display: flex;
-  justify-content: center; /* Center PDFs horizontally */
-}
-
 .messagesGrid {
   display: flex;
-  flex-wrap: wrap; /* Allow PDFs to wrap to the next line */
-  justify-content: center; /* Center PDFs horizontally */
-  max-width: 1000px; /* Set maximum width for the grid */
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add gap between images */
 }
 
-.pdfContainer {
-  width: 600px; /* Increase PDF container width */
-  height: 400px; /* Maintain PDF container height */
-  margin: 10px; /* Adjust margin between PDFs */
-  overflow-x: auto; /* Enable horizontal scrolling for PDF container */
-  border: 1px solid #ccc; /* Add border for visual separation */
+.imageContainer {
+  flex: 0 0 calc(50% - 20px); /* Adjust width as needed */
+  border: 1px solid darkgray;
 }
 
-.pdfPage {
-  width: 100%; /* Ensure page takes full width of container */
-  height: calc(100% - 20px); /* Adjust page height to fit container minus margin */
+.embeddedImage {
+  max-width: 100%;
+  height: auto; /* Ensure aspect ratio is maintained */
 }
+
+.copyright{
+  color: rgb(92, 92, 92);
+  text-align: center;
+  padding: 2%;
+  width: 80%;
+  margin: auto auto;
+}
+
 
 
 
