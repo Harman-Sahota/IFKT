@@ -68,7 +68,7 @@ const AutoScrollCarousel = () => {
         {renderCarouselItem(
           'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=RB5j1QMAAAAJ&citpid=2',
           'Yordan Kyosev',
-          'Professor Yordan Ksoyev: a distinguished leader in the "Development and Assembly of Textile Products." With a stellar track record in the textile industry, he brings expertise, innovation, and a passion for pushing boundaries. Explore the transformative journey led by his visionary leadership, shaping the future of textile products.',
+          'Professor Yordan Kyosev: a distinguished leader in the "Development and Assembly of Textile Products." With a stellar track record in the textile industry, he brings expertise, innovation, and a passion for pushing boundaries. Explore the transformative journey led by his visionary leadership, shaping the future of textile products.',
           0
         )}
         {renderCarouselItem(
@@ -94,6 +94,12 @@ const AutoScrollCarousel = () => {
           'Julia Klausmann',
           'Julia Klausmann, a Textile and Design Engineer in R&D at Hochschule Niederrhein, excels in sustainable development of technical textiles. Awarded the Promos Scholarship, her impactful contributions span eLearning administration and an Adidas internship.',
           4
+        )}
+         {renderCarouselItem(
+          'https://www.ulster.ac.uk/staff-images/images/gault-1.jpg',
+          'Alison Gault',
+          'Explore the Frontier of Textile Design and Research at Ulster University, guided by the experienced Alison Gault. With a rich background in fashion and textiles, Alison spearheads innovative projects in knitwear technology and design, contributing to advancements in materials and craftsmanship. Join her pioneering initiatives and shape the future of textile innovation at upcoming conferences and research endeavors.',
+          5
         )}
       </Carousel>
     </div>

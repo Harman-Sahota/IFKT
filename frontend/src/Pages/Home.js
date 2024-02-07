@@ -263,7 +263,7 @@ const Home = () => {
                 <MessagesSection />
 
 
-                <h4 id={styles.sectionh}  > Gurpartap Singh Toor and Harkirat Singh</h4>
+                <h5 id={styles.sectionh}  > Gurpartap Singh Toor and Harkirat Singh</h5>
                 <iframe
                     width="560"
                     height="315"
@@ -286,21 +286,14 @@ const Home = () => {
 
                 <div id={styles.science2}>
                     <ul>
-                        <li>Subhash Anand - University of Bolton, United Kingdom</li>
                         <li>Mirela Blaga - Gheorghe Asachi Technical University of lasi, Romania</li>
-                        <li>Chokri Cherif - Technische Universität Dresden, Germany</li>
                         <li>Andrea Ehrmann - Fachhochschule Bielefeld, Germany</li>
-                        <li>Thomas Gries - Rheinisch-Westf. Techn. Hochschule Aachen, Germany</li>
-                        <li>Jörg Hartmann - H. Stoll GmbH & Co. KG, Germany</li>
-                        <li>Lubos Hes - Technical University of Liberec, Czech Republic</li>
-                        <li>Heike Illing-Günther - Sächsisches Textilforschungsinstitut e. V., Germany</li>
-                        <li>Krzysztof Kowalski - Politechnika Lodzka, Poland</li>
-                        <li>Liu Liyan - School of Textiles, Tianjin Polytechnic University, China</li>
                         <li>Arzu Marmarali - Ege University, Turkey</li>
                         <li>Elzbieta Mielicka - Instytut Wiókiennictwa, Textile Research Institute, Poland</li>
                         <li>Shin Woong Park - INHA University, Korea</li>
                         <li>Alenka Pavko-Cuden - University of Ljubljana, Slovenia</li>
-                        <li>Maike Rabe - Hochschule Niederrhein, Germany</li>
+                        <li>Mathias Beer - Hochschule Niederrhein, Germany</li>
+                        <li>Marcus O. Weber - Hochschule Niederrhein, Germany</li>
                     </ul>
                 </div>
 
