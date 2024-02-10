@@ -79,8 +79,8 @@ const AutoScrollCarousel = () => {
         )}
         {renderCarouselItem(
           'https://www.hs-niederrhein.com/fileadmin/pool-ordner/bilder/Portraitfotos/FB07/Weber.jpg',
-          'Marcus O. Webber',
-          'Textile Technology, with a special emphasis on spinning technology, as well as expertise in management science and pedagogy, defines the focus of TUB/Textile Management under the capable leadership of Marcus O. Webber. Holding a pivotal role in steering the program, Marcus O. Webber brings a wealth of knowledge and a commitment to excellence.',
+          'Marcus O. Weber',
+          'Textile Technology, with a special emphasis on spinning technology, as well as expertise in management science and pedagogy, defines the focus of TUB/Textile Management under the capable leadership of Marcus O. Weber. Holding a pivotal role in steering the program, Marcus O. Weber brings a wealth of knowledge and a commitment to excellence.',
           2
         )}
         {renderCarouselItem(
