@@ -370,7 +370,7 @@ const Home = () => {
                 </div>
 
                 <p className={styles.copyright}><b>Disclaimer:</b> All rights reserved by event organizer. The participation registration fee is non-refundable. All participants and attendees must follow Brampton city by-laws and regulations.</p>
-                <p className={styles.copyright}>Designed by <a href='https://codedelic.com'>Codedelic</a></p>
+                <p className={styles.copyright}>Designed, Developed and Managed by <a href='https://codedelic.com'>Codedelic</a></p>
                 <Navbar />
 
                 <Modal
