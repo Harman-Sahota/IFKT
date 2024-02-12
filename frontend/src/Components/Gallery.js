@@ -14,7 +14,7 @@ import Poland11 from '../assets/poland11.jpg';
 import Poland12 from '../assets/poland12.jpg';
 import Poland13 from '../assets/poland13.jpg';
 import Poland14 from '../assets/poland14.jpg';
-import Poland15 from '../assets/poland15.jpg';
+// import Poland15 from '../assets/poland15.jpg';
 import Poland16 from '../assets/poland16.jpg';
 import Poland17 from '../assets/poland17.jpg';
 import Poland18 from '../assets/poland18.jpg';
@@ -51,7 +51,7 @@ const Gallery = () => {
     Poland12,
     Poland13,
     Poland14,
-    Poland15,
+    // Poland15,
     Poland16,
     Poland17,
     Poland18,
