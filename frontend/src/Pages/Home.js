@@ -292,8 +292,8 @@ const Home = () => {
                         <li>Elzbieta Mielicka - Instytut Wiókiennictwa, Textile Research Institute, Poland</li>
                         <li>Shin Woong Park - INHA University, Korea</li>
                         <li>Alenka Pavko-Cuden - University of Ljubljana, Slovenia</li>
-                        <li>Mathias Beer - Hochschule Niederrhein University, Germany</li>
-                        <li>Marcus O. Weber - Hochschule Niederrhein  University, Germany</li>
+                        <li>Mathias Beer - Hochschule Niederrhein University of Applied Sciences, Germany</li>
+                        <li>Marcus O. Weber - Hochschule Niederrhein University of Applied Sciences, Germany</li>
                     </ul>
                 </div>
 
