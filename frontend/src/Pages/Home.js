@@ -18,6 +18,8 @@ import map from '../assets/map.png'
 import message from '../assets/message.mp4'
 import Gallery from '../Components/Gallery';
 import MessagesSection from '../Components/Messages';
+import jbfields from '../assets/jbfields.png';
+import greatsocks from '../assets/greatsocks.jpg'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -153,6 +155,10 @@ const Home = () => {
         );
     };
 
+    const handleImageClick = (url) => {
+        window.open(url, '_blank');
+    };
+    
     return (
         <div className='container container-fluid' id='smooth-wrapper'>
             <div id='smooth-content'>
@@ -350,8 +356,30 @@ const Home = () => {
                         }
                     />
                 </div>
+
+
+
                 <div className='gall' id={styles.gall}>
                     <Gallery></Gallery>
+                </div>
+
+                <h2 id={styles.science} className='science' >Sponsors</h2>
+                <div id={styles.sponsorlogos} className='spons'>
+
+                    <img
+                        className={`${styles.sponsorimage} img-fluid`}
+                        src={jbfields}
+                        alt="JBFields Logo"
+                        onClick={() => handleImageClick('https://www.jbfields.ca')}
+                    />
+
+                    <img
+                        className={`${styles.sponsorimage} img-fluid`}
+                        src={greatsocks}
+                        alt="GreatSocks Logo"
+                        onClick={() => handleImageClick('https://greatsox.com')}
+                    />
+
                 </div>
 
                 <div className={styles.tickets}>

@@ -50,6 +50,7 @@ const SiteNavbar = () => {
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('country-list')}>Countries</Nav.Link>
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('science')}>Scientific Committee</Nav.Link>
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('gall')}>Past Events</Nav.Link>
+      <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('spons')}>Sponsors</Nav.Link>
       <Nav.Link id={styles.items} className="mr-3" onClick={() => scrollToSection('registernow')}>Register</Nav.Link>
      
     </Nav>

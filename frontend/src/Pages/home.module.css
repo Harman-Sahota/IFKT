@@ -423,10 +423,28 @@ cursor: pointer;
   text-align: center;
   padding: 2%;
   width: 80%;
+  font-size: 1.6vh;
   margin: auto auto;
 }
 
+/* Container for sponsor logos */
+#sponsorlogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5%;
+}
 
+/* Image styles */
+#sponsorlogos img {
+  display: block; 
+  width: 35%; 
+  height: 35%;
+}
+
+#sponsorlogos img:hover{
+  cursor: pointer;
+}
 
 
 /* Your existing styles for larger screens */
@@ -490,6 +508,10 @@ cursor: pointer;
   .image2,
   .image3 {
     display: none;
+  }
+
+  #sponsorlogos{
+    flex-direction: column;
   }
 }
 
