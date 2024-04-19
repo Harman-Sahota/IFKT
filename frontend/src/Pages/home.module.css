@@ -513,6 +513,18 @@ cursor: pointer;
   #sponsorlogos{
     flex-direction: column;
   }
+
+  #sponsorlogos img {
+    display: block; 
+    width: 75%; 
+    height: 75%;
+    margin-top: 4%;
+  }
+  
+  #sponsorlogos img:hover{
+    cursor: pointer;
+  }
+
 }
 
 
