@@ -1,5 +1,3 @@
-// RegistrationForm.js
-
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Form, Button, Col, Container, Row } from 'react-bootstrap';
@@ -14,17 +12,26 @@ const RegistrationForm = () => {
     email: '',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    // Send email to the recipient
-    emailjs
-      .send(
+
+    if (isSubmitting) {
+      return; // Prevent multiple submissions
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const PUBLIC_API_KEY = 'ITEDlNDS4SLpA-iwW';
+      // Send email to the recipient
+      const recipientResponse = await emailjs.send(
         'service_h8ibkqa',
         'template_f225ypw',
         {
@@ -35,22 +42,13 @@ const RegistrationForm = () => {
           phone_number: formData.phoneNumber,
           email: formData.email
         },
-        'ITEDlNDS4SLpA-iwW'
-      )
-      .then(
-        (response) => {
-          console.log('Recipient Email sent successfully:', response);
-          // You can add further actions here, such as showing a success message to the user
-        },
-        (error) => {
-          console.error('Recipient Email sending failed:', error);
-          // You can handle errors, e.g., show an error message to the user
-        }
+        PUBLIC_API_KEY 
       );
-  
-    // Send email to yourself (admin)
-    emailjs
-      .send(
+
+      console.log('Recipient Email sent successfully:', recipientResponse);
+
+      // Send email to yourself (admin)
+      const adminResponse = await emailjs.send(
         'service_h8ibkqa',
         'template_1ymc2hn',
         {
@@ -61,20 +59,30 @@ const RegistrationForm = () => {
           phone_number: formData.phoneNumber,
           email: formData.email
         },
-        'ITEDlNDS4SLpA-iwW'
-      )
-      .then(
-        (response) => {
-          console.log('Admin Email sent successfully:', response);
-          // You can add further actions here, such as logging or notification
-        },
-        (error) => {
-          console.error('Admin Email sending failed:', error);
-          // You can handle errors, e.g., log the error or send an alert
-        }
+        PUBLIC_API_KEY 
       );
+
+      console.log('Admin Email sent successfully:', adminResponse);
+
+      // Show success alert
+      alert('Form data successfully submitted!');
+
+      // Clear form fields after submission
+      setFormData({
+        firstName: '',
+        lastName: '',
+        phoneNumber: '',
+        email: '',
+      });
+
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      // Handle errors, e.g., show an error message to the user
+      alert('Failed to submit form data. Please try again.');
+    } finally {
+      setIsSubmitting(false); // Re-enable the submit button
+    }
   };
-  
 
   return (
     <Container className={styles.registrationContainer}>
@@ -130,7 +138,9 @@ const RegistrationForm = () => {
               />
             </Form.Group>
 
-            <Button type="submit">Register</Button>
+            <Button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Submitting...' : 'Register'}
+            </Button>
           </Form>
         </Col>
       </Row>

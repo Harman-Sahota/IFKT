@@ -5,6 +5,7 @@ import styles from '../Pages/home.module.css';
 import lady1 from '../assets/lady1.png';
 import lady2 from '../assets/lady2.png';
 import man1 from '../assets/man1.png';
+import julia from '../assets/ julia.jpeg';
 
 const AutoScrollCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -90,7 +91,7 @@ const AutoScrollCarousel = () => {
           3
         )}
          {renderCarouselItem(
-          'https://media.licdn.com/dms/image/C5603AQHR5eNMgqSwZQ/profile-displayphoto-shrink_400_400/0/1619552460157?e=1710374400&v=beta&t=F2ziSGuuV38LXjvVE-hkUp51ftF6k0JJNwOr5GTg-to',
+          julia,
           'Julia Klausmann',
           'Julia Klausmann, a Textile and Design Engineer in R&D at Hochschule Niederrhein, excels in sustainable development of technical textiles. Awarded the Promos Scholarship, her impactful contributions span eLearning administration and an Adidas internship.',
           4
