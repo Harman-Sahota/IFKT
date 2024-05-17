@@ -19,8 +19,8 @@ import message from '../assets/message.mp4'
 import Gallery from '../Components/Gallery';
 import MessagesSection from '../Components/Messages';
 import jbfields from '../assets/jbfields.png';
-import greatsocks from '../assets/greatsocks.jpg'
-
+import greatsocks from '../assets/greatsocks.jpg';
+import crowther from '../assets/crowther.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -158,7 +158,7 @@ const Home = () => {
     const handleImageClick = (url) => {
         window.open(url, '_blank');
     };
-    
+
     return (
         <div className='container container-fluid' id='smooth-wrapper'>
             <div id='smooth-content'>
@@ -380,7 +380,17 @@ const Home = () => {
                         onClick={() => handleImageClick('https://greatsox.com')}
                     />
 
+                    <img
+                        className={`${styles.sponsorimage} img-fluid`}
+                        src={crowther}
+                        alt="Crowther Logo"
+                        onClick={() => handleImageClick('https://www.crowther.ca')}
+                      
+                    />
+                    
                 </div>
+
+                <h5 class={styles.figurecap}>Knitting Machines Oil Supplier</h5>
 
                 <div className={styles.tickets}>
                     <h4 id={styles.registerhead} className='registernow'>Secure Your General Admission Tickets Now! Tap to Get Yours!</h4>

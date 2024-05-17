@@ -438,18 +438,33 @@ cursor: pointer;
 /* Image styles */
 #sponsorlogos img {
   display: block; 
-  width: 35%; 
-  height: 35%;
+  width: 25%; 
+  height: 25%;
 }
 
 #sponsorlogos img:hover{
   cursor: pointer;
 }
 
+.caption {
+  margin-top: 10px;  
+  font-size: 14px;  
+  color: #555;     
+}
+
+.figurecap{
+  margin-left: 70%;
+}
+
 
 /* Your existing styles for larger screens */
 
 @media (max-width: 768px) {
+
+  .figurecap{
+    margin-left: 30%;
+  }
+  
 
   .pdfContainer{
     width: 85%;
