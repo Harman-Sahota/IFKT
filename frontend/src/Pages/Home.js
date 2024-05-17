@@ -20,7 +20,7 @@ import Gallery from '../Components/Gallery';
 import MessagesSection from '../Components/Messages';
 import jbfields from '../assets/jbfields.png';
 import greatsocks from '../assets/greatsocks.jpg';
-import crowther from '../assets/crowther.png';
+import vickers from '../assets/vickers.JPG';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -382,16 +382,15 @@ const Home = () => {
 
                     <img
                         className={`${styles.sponsorimage} img-fluid`}
-                        src={crowther}
-                        alt="Crowther Logo"
-                        onClick={() => handleImageClick('https://www.crowther.ca')}
+                        src={vickers}
+                        alt="Vickers Logo"
+                        onClick={() => handleImageClick('https://vickers-oil.com/textile/')}
                       
                     />
                     
                 </div>
 
-                <h5 class={styles.figurecap}>Knitting Machines Oil Supplier</h5>
-
+              
                 <div className={styles.tickets}>
                     <h4 id={styles.registerhead} className='registernow'>Secure Your General Admission Tickets Now! Tap to Get Yours!</h4>
                     <a className={styles.ticketbtn} href='https://tickets.brampton.ca/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=582F3A90-E36D-4820-A0FB-E7159F6ED186&BOparam::WScontent::loadArticle::context_id=9CF6357F-7692-4810-BC2F-91B601C6F8D2' target="_blank"><Button>Book Tickets</Button></a>
